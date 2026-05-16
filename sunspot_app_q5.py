@@ -1,6 +1,6 @@
 # --------------------------------------------------
 # [4] 시각화한 내용을 Steamlit에 배포하세요.
-# 위에서 생성한 sunspots_for_prophet.csv를 다운로드 받아, 루트/data 아래에 넣어주세요.
+# 위에서 생성한 sunspots_for_prophet.csv를 다운로드 받아, 루트 아래에 넣어주세요.
 # --------------------------------------------------
 import streamlit as st
 import pandas as pd
@@ -15,7 +15,7 @@ st.title("🌞 Prophet Forecast with Preprocessed Sunspot Data")
 # [1] 데이터 불러오기
 # ----------------------------------
 # TODO: 'sunspots_for_prophet.csv' 파일을 불러오고, 'ds' 컬럼을 datetime 형식으로 변환하세요.
-df = pd.read_csv("data/sunspots_for_prophet.csv")
+df = pd.read_csv("sunspots_for_prophet.csv")
 df["ds"] = pd.to_datetime(df["ds"])
 
 
